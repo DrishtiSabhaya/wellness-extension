@@ -10,15 +10,14 @@
     "128": "icons/icon_128.png"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "action": {
     "default_title": "Wellness Demo",
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "storage"
-  ],
+  "permissions": ["tabs", "activeTab", "storage", "webNavigation", "downloads", "alarms", "notifications", "fileSystem"],
   "content_scripts": [
     {
       "matches": [

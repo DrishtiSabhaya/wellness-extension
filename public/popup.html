@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <title>My Chrome Extension</title>
     <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annotator Wellness</title>
   </head>
   <body>
-    <div class="app">
+    <!-- <div class="app">
       <p class="counter-label">Counter</p>
       <div id="counter" class="counter"></div>
       <div class="button-container">
@@ -22,11 +25,27 @@
 
     <script src="popup.js"></script>
 
-    <!--
+    
       This HTML file opens when you click on icon from the toolbar.
 
       To begin the development, run `npm run watch`.
       To create a production bundle, use `npm run build`.
     -->
+    <h2>Annotator Wellness</h2>
+
+    <div class="tab">
+      <button class="tablinks" id="MetricsTab" onclick="getUID()">Metrics</button>
+      <button class="tablinks" id="SuggestionsTab">Suggestions</button>
+      <button class="tablinks" id="SocialMediaTab">Interactions</button>
+    </div>
+    <div id="Metrics" class="tabcontent">
+
+    </div>
+    <div id="Suggestions" class="tabcontent">
+        
+    </div>
+    <div id="SocialMedia" class="tabcontent">
+        
+    </div>
   </body>
 </html>
